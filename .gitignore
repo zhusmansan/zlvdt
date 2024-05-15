@@ -6,3 +6,9 @@ zlvdt_pcb/zlvdt_pcb-backups/
 zlvdt_pcb/#auto_saved_files#
 
 zlvdt_pcb/_autosave-zlvdt_pcb.kicad_sch
+
+zlvdt_firmware/.devcontainer/
+
+zlvdt_firmware/build/
+
+zlvdt_firmware/managed_components/
