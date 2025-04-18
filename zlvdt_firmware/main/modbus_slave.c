@@ -72,7 +72,7 @@ void modbusTask(void *tParam)
     ESP_ERROR_CHECK(uart_set_mode(MB_PORT_NUM, UART_MODE_RS485_HALF_DUPLEX));
 
     ESP_LOGI(TAG, "Modbus slave stack initialized.");
-    ESP_LOGI(TAG, "Start modbus test...");
+    ESP_LOGI(TAG, "Start modbus test....");
 
     while (true)
     {

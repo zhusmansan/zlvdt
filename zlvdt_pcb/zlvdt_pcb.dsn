@@ -58,10 +58,7 @@
       (place R1 109220.000000 -73660.000000 back 270.000000 (PN 10k))
     )
     (component Resistor_SMD:R_0805_2012Metric::4
-      (place R4 114300.000000 -78740.000000 back 0.000000 (PN 10k))
-    )
-    (component Diode_SMD:D_SMA_Handsoldering::1
-      (place D1 114300.000000 -88900.000000 back 270.000000 (PN PMEG1030EJ))
+      (place R4 114300.000000 -78740.000000 back 0.000000 (PN 33k))
     )
   )
   (library
@@ -238,27 +235,6 @@
       (pin RoundRect[T]Pad_1025x1400_250.951_um_0.000000_0 1 -912.5 0)
       (pin RoundRect[T]Pad_1025x1400_250.951_um_0.000000_0 2 912.5 0)
     )
-    (image Diode_SMD:D_SMA_Handsoldering::1
-      (outline (path signal 120  -4400 1650  -4400 -1650))
-      (outline (path signal 120  -4400 1650  2500 1650))
-      (outline (path signal 120  -4400 -1650  2500 -1650))
-      (outline (path signal 50  -4500 1750  4500 1750))
-      (outline (path signal 50  4500 -1750  -4500 -1750))
-      (outline (path signal 50  -4500 -1750  -4500 1750))
-      (outline (path signal 50  4500 1750  4500 -1750))
-      (outline (path signal 100  -649.44 -1.02  -1551.14 -1.02))
-      (outline (path signal 100  -649.44 799.08  -649.44 -801.12))
-      (outline (path signal 100  501.18 -1.02  1499.4 -1.02))
-      (outline (path signal 100  -649.44 -1.02  501.18 799.08))
-      (outline (path signal 100  -649.44 -1.02  501.18 -750.32))
-      (outline (path signal 100  -2300 -1500  -2300 1500))
-      (outline (path signal 100  2300 1500  -2300 1500))
-      (outline (path signal 100  501.18 -750.32  501.18 799.08))
-      (outline (path signal 100  2300 -1500  -2300 -1500))
-      (outline (path signal 100  2300 1500  2300 -1500))
-      (pin Rect[T]Pad_3500x1800_um 1 -2500 0)
-      (pin Rect[T]Pad_3500x1800_um 2 2500 0)
-    )
     (padstack Oval[A]Pad_1600x1600_um
       (shape (path F.Cu 1600  0 0  0 0))
       (shape (path B.Cu 1600  0 0  0 0))
@@ -299,12 +275,6 @@
     )
   )
   (network
-    (net "Net-(D1-Pad1)"
-      (pins U1-7 D2-2 D1-1)
-    )
-    (net "Net-(D1-Pad2)"
-      (pins U1-6 R3-2 R4-1 D1-2)
-    )
     (net +5V
       (pins J1-1 U1-8)
     )
@@ -325,6 +295,12 @@
     )
     (net esp_17_dac1
       (pins J1-6 R1-1)
+    )
+    (net "Net-(D2-Pad2)"
+      (pins U1-7 D2-2)
+    )
+    (net "Net-(R3-Pad2)"
+      (pins U1-6 R3-2 R4-1)
     )
     (class kicad_default
       (circuit
